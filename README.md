@@ -4,7 +4,7 @@
   --------------------
 
 ## Download .Phar: 
-  - [![Download the .Phar](#)](#)
+  - [![Download the .Phar](#)](http://www.mediafire.com/file/phnees494bfusql/SignCommand_v2.phar)
 --------------------
 
 ## Commands:
