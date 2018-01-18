@@ -1,6 +1,6 @@
 # SignCommands
   SignCommands ist ein Plugin das Commands in Schildern speichern lässt.
-  [![](https://www.youtube.com/c/iTzFreeHD)]
+  [![Video](https://www.youtube.com/c/iTzFreeHD)](https://github.com/iTzFreeHD/SignCommands)
   --------------------
 
 ## Download .Phar: 
