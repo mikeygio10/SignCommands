@@ -14,7 +14,7 @@
 
 ## GIDE:
    --------------------
-   Line1: [run]
-    Line2: Player, VIP, Admin
-     Line3: <Command>
-      Line4: <Beschreibung>
+   - Line1: [run]
+   - Line2: Player, VIP, Admin
+   - Line3: <Command>
+   - Line4: <Beschreibung>
