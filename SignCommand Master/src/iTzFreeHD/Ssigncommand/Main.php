@@ -19,26 +19,23 @@ class Main extends PluginBase implements listener{
     public $cfg;
 
 
-    public function onEnable() {
-        $this->getLogger()->info(c::GREEN."Plugin wurde Geladen");
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        
-        
-        @mkdir($this->getDataFolder());
-		if (!file_exists($this->getDataFolder() . 'config.yml')) {
-			$this->initConfig();
-		}
+    public function onEnable()
+    {
 
-	$this->cfg = new Config($this->getDataFolder() . 'config.yml', Config::YAML);
-        
-        
+        @mkdir($this->getDataFolder());
+
+        $cfg = new Config($this->getDataFolder(). "config.yml", Config::YAML);
+
+        if(empty($cfg->get("Prefix"))) {
+            $cfg->set("Prefix", "§7[§bSingCommands§7]");
+            $cfg->save();
+        }
+
+        $this->p = $cfg->get("Prefix");
+        $this->getLogger()->info(c::GREEN . "Plugin wurde Geladen");
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+
     }
-    public function initConfig() {
-		$this->cfg = new Config($this->getDataFolder() . 'config.yml', Config::YAML);
-		$this->cfg->set('Prefix', '§7[§6SignCommands§7]§r ');
-		$this->cfg->save();
-                $this->p = $this->cfg->get("Prefix");
-	}
     public function onSignCange(SignChangeEvent $event){
             $player = $event->getPlayer();
             if (strtolower($event->getLine(0) === "[run]")) {
@@ -71,10 +68,32 @@ class Main extends PluginBase implements listener{
 				$text = $tile->getText();
                                 $cmd = $text[2];
 				if (strtolower(c::clean($text[0])) === strtolower("Command")) {
-					$this->getServer()->dispatchCommand($player, $cmd);
-				} elseif (strtolower(c::clean($text[1])) === strtolower("ERROR")) {
-                                    $player->sendMessage($this->p.c::RED."ERROR");
-                            }
+                    if ($text[1] === c::YELLOW."Player") {
+                        if ($player->hasPermission("player.sign")) {
+
+                            $this->getServer()->dispatchCommand($player, $cmd);
+                        } else {
+                            $player->sendMessage($this->p.c::RED."Keine Rechte");
+                        }
+                    }
+				    if ($text[1] === c::GOLD."VIP") {
+                        if ($player->hasPermission("vip.sign")) {
+                            $this->getServer()->dispatchCommand($player, $cmd);
+                        } else {
+                            $player->sendMessage($this->p.c::RED."Keine Rechte");
+                        }
+                    }
+                    if ($text[1] === c::RED."Only Stuff") {
+                        if ($player->hasPermission("vip.sign")) {
+
+                            $this->getServer()->dispatchCommand($player, $cmd);
+                        } else {
+                            $player->sendMessage($this->p.c::RED."Keine Rechte");
+                        }
+                    }
+
+
+				}
 			}
 		}
     }

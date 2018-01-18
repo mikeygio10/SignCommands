@@ -10,3 +10,10 @@ commands:
   sign:
     description: SignCommand info
     default: op
+permissions:
+  player.sign:
+    default: true
+  vip.sign:
+    default: op
+  admin.sign:
+    default: op
