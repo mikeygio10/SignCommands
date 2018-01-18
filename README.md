@@ -6,3 +6,15 @@
 
 ## Commands:
   /sign
+
+## Permissions:
+   Player -> player.sign
+   VIP -> vip.sign
+   Admin -> admin.sign
+
+## GIDE:
+   --------------------
+   Line1: [run]
+   Line2: Player, VIP, Admin
+   Line3: <Command>
+   Line4: <Beschreibung>
