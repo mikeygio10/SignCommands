@@ -1,23 +1,23 @@
 # SignCommands
-  --------------------
   SignCommands ist ein Plugin das Commands in Schildern speichern lässt.
-  
-## Download .Phar:
-   --------------------
+  --------------------
+
+## Download .Phar: 
   - 
+--------------------
 
 ## Commands:
-   --------------------
+   
    - /sign
+--------------------
 
 ## Permissions:
-   --------------------
    - Player -> player.sign
    - VIP -> vip.sign
    - Admin -> admin.sign
+--------------------
 
 ## GIDE:
-   --------------------
    - Line1: [run]
    - Line2: Player, VIP, Admin
    - Line3: <Command>
