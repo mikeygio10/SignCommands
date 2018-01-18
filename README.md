@@ -5,7 +5,7 @@
   - 
 
 ## Commands:
-  /sign
+   - /sign
 
 ## Permissions:
    - Player -> player.sign
