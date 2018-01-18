@@ -8,9 +8,9 @@
   /sign
 
 ## Permissions:
-   Player -> player.sign
-   VIP -> vip.sign
-   Admin -> admin.sign
+   - Player -> player.sign
+   - VIP -> vip.sign
+   - Admin -> admin.sign
 
 ## GIDE:
    --------------------
