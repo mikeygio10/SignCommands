@@ -21,8 +21,8 @@
 ## GIDE:
    - Line1: [run]
    - Line2: Player, VIP, Admin
-   - Line3: <Command>
-   - Line4: <Beschreibung>
+   - Line3: Command
+   - Line4: Beschreibung
   
 <img src="https://github.com/iTzFreeHD/SignCommands/blob/master/CommandSings.png?raw=true"></img>
 
