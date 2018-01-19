@@ -26,7 +26,7 @@
   
 <img src="https://github.com/iTzFreeHD/SignCommands/blob/master/SignCommands.png?raw=true"></img>
 
-<img src="https://github.com/iTzFreeHD/SignCommands/blob/master/Commandsigns1.png?raw=true"></img>
+<img src="https://github.com/iTzFreeHD/SignCommands/blob/master/picture/Commandsigns1.png?raw=true"></img>
 
 -------------------------------
 
