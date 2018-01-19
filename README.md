@@ -23,6 +23,13 @@
    - Line2: Player, VIP, Admin
    - Line3: Command
    - Line4: Beschreibung
+## Consolen Sign
+   - Das Consolen Sign fürt Befhele über die Console aus und erlaubt dem user mit den Permisssions "console.sign" alle befehle auszuführen wie z.B. OP player !
+
+   - Line1: [run]
+   - Line2: Player, VIP, Admin
+   - Line3: Command
+   - Line4: Command
   
 <img src="https://github.com/iTzFreeHD/SignCommands/blob/master/picture/SignCommands.png?raw=true"></img>
 
