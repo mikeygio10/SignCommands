@@ -17,3 +17,5 @@ permissions:
     default: op
   admin.sign:
     default: op
+  console.sign:
+    default: op
