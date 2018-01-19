@@ -16,6 +16,7 @@
    - Player -> player.sign
    - VIP -> vip.sign
    - Admin -> admin.sign
+   - Console -> console.sign
 --------------------
 
 ## GIDE:
