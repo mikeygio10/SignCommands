@@ -58,13 +58,9 @@ class Main extends PluginBase implements listener{
                             }
                         }
                     }
-                }else {
-                     $event->getPlayer()->sendMessage($this->p.c::RED."Du hast keine Permissions");
-                     $event->setLine(0, "No Perm");
-                     $event->setLine(1, "ERROR");
-                     }
-                 }
+                }
             }
+    }
     public function onSignClick(PlayerInteractEvent $event){
         $player = $event->getPlayer();
 		$id = $event->getBlock()->getId();
@@ -73,7 +69,6 @@ class Main extends PluginBase implements listener{
             if ($tile instanceof \pocketmine\tile\Sign) {
                 $text = $tile->getText();
                 $cmd = $text[2];
-                $ccmd = $cmd and $text[3];
                 if (strtolower(c::clean($text[0])) === strtolower("Command")) {
                     if ($text[1] === c::YELLOW . "Player") {
                         if ($player->hasPermission("player.sign")) {
@@ -99,6 +94,7 @@ class Main extends PluginBase implements listener{
                     }
                     if ($text[1] === c::RED . "Console") {
                         if ($player->hasPermission("console.sign")) {
+                            $ccmd = $text[2] and $text[3];
                             $this->getServer()->dispatchCommand(new ConsoleCommandSender(), $ccmd);
                         } else {
                             $player->sendMessage($this->p . c::RED . "Keine Rechte");
