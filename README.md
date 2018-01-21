@@ -4,7 +4,7 @@
   --------------------
 
 ## Download .Phar: 
-  - [![Download the .Phar](#)](http://www.mediafire.com/folder/x2drid1cu8pn0/SignCommands)
+  - [![Download the .Phar](#)](https://poggit.pmmp.io/ci/iTzFreeHD/SignCommands)
 --------------------
 
 ## Commands:
