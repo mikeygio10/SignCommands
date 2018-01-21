@@ -2,6 +2,6 @@
 branches:
 - master
 projects: 
-SignCommands:
-    path: "SignCommand-Master"
+    SignCommands:
+        path: "SignCommand-Master"
 ...
